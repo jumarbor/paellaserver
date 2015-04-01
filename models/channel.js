@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var uuid = require('mongoose-uuid');
 
-var ChannelSchema = new Schema({
+var ChannelSchema = Schema({
 	children: [ String ],
 	creationDate: { type: Date, default: Date.now },
 	deletionDate: { type: Date },
